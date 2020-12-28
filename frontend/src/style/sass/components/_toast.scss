@@ -1,0 +1,36 @@
+.toast{
+    width: 300px;
+    background-color: rgb(225,225,225) ;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 2px 0;
+    @media screen and (max-width: 750px){
+        width: 100%;
+    }
+
+    &-title{
+        background-color: white;
+        border-radius: 3px 3px 0 0;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+
+        p{
+            flex: 1;
+            font-weight: bold;
+            color: rgb(73, 73, 73);
+        }
+        button{
+            border-color: transparent;
+            background-color: transparent;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    &-text{
+        background-color: rgb(225,225,225);
+        border-radius: 0 0 3px 3px;
+        padding: 15px 15px;
+    }
+}

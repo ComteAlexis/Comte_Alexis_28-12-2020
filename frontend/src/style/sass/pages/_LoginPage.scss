@@ -1,0 +1,30 @@
+.log-system{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: 100vh;
+    
+    .login-form{
+        width: 100%;
+        & > svg{
+            width: 100%;
+        }
+        & > a {
+            color: $color-primary;
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+    @media screen and (min-width: 750px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 750px) {
+        img{
+            display: none;
+        }
+    }
+}

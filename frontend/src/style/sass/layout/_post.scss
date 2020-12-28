@@ -1,0 +1,78 @@
+.post {
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color: #fff;
+
+  &__avatar{
+    padding: 20px;
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  &__option {
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 20px 0 0;
+    flex: 1;
+    &__title {
+      padding: 30px 0 10px 0;
+      display: flex;
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        flex: 1;
+      }
+      i {
+        color: #921010;
+      }
+    }
+    & > p {
+      padding: 0 0 30px 0;
+      line-height: 23px;
+      font-size: 16px;
+      @media screen and (max-width: 750px) {
+        font-size: 18px;
+      }
+    }
+    & > img {
+      max-width: 100%;
+      max-height: 500px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+    .comment-icon {
+      width: 30px;
+      cursor: pointer;
+      padding: 3px;
+      color: $color-primary;
+    }
+    .like-icon {
+      width: 30px;
+      cursor: pointer;
+      padding: 3px;
+      color: #de0808;
+    }
+  }
+}

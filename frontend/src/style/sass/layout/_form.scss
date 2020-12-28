@@ -1,0 +1,96 @@
+form {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    .form--group{
+        margin: 20px 0;
+        height: 70px;
+        .form--control{
+            background-color: white;
+            border: 1px solid rgb(145, 145, 145);
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+
+            &:has(input:focus){
+
+            }
+            label{
+                font-size: 18px;
+            }
+            input{
+                width: 100%;
+                margin-left: 10px;
+                border-color: transparent;
+                height: 100%;
+                font-size: 18px;
+                outline: none;
+            }
+        }
+        p{
+            margin-top: 5px;
+            text-align: left;
+            color: rgb(214, 0, 0);
+        }
+    }
+    a{
+        width: 100%;
+        color: $color-primary;
+        text-align: right;
+        display: block;
+        font-size: 16px;
+    }
+    .btn{
+        margin-top: 50px;
+        cursor: pointer;
+    }
+}
+
+.form__comment {
+    display: flex;
+    flex-direction: column;
+    textarea {
+        flex: 1;
+        resize: none;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    button {
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid green;
+        border-radius: 5px;
+        color: green;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}
+
+.avatar-update {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+        display: none;
+    }
+
+    .btn-avatar-submit > button{
+        padding: 5px 0;
+        width: 100px;
+        background-color: $color-primary;
+        border-color: transparent;
+        border-radius: 5px;
+        color: #ececec;
+        font-weight: bold;
+        margin: 10px;
+
+        &:nth-child(2) {
+            background-color: #259d25;
+        }
+    }
+}

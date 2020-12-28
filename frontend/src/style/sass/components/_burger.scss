@@ -1,0 +1,49 @@
+.burger-collapse{
+    background-color: darken($color-primary, 10);
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid darken($color-primary, 20);
+    grid-column-end: none;
+    cursor: pointer;
+
+    &.open{
+        background-color: darken($color-primary, 20);
+        
+        & > span:nth-child(1){
+            transform-origin: 17px 7px;
+            transform: rotate(-135deg);
+        }
+        & > span:nth-child(2){
+            transform-origin: 17px 7px;
+            transform: translateX(-40px);
+        }
+        & > span:nth-child(3){
+            transform-origin: 17px -2px;
+            transform: rotate(135deg);
+        }
+
+        & ~ .nav{
+            transform: scale(1);
+        }
+    }
+
+    span{
+        height: 5px;
+        width: 30px;
+        background-color: #fff;
+        border-radius: 2px;
+        margin: 2px 0;
+        transform: rotate(0);
+        transition: transform 500ms;
+    }
+
+    @media screen and (min-width: 750px) {
+        display: none;
+    }
+}

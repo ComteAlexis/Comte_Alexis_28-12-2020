@@ -1,0 +1,12 @@
+.account-action {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  button {
+    padding: 5px 10px;
+    background-color: $color-primary;
+    border-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+  }
+}

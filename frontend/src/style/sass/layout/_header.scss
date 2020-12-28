@@ -1,0 +1,19 @@
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 50px;
+    background-color: $color-primary;
+    justify-content: space-between;
+
+    svg{
+        padding: 12px 0;
+    }
+
+    @media screen and (max-width: 750px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}

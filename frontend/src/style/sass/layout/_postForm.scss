@@ -1,0 +1,66 @@
+.form-post{
+  display: flex;
+  margin-top: 20px;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  background-color: #fff;
+
+  .profile-image{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0 0 10px;
+    img {
+      width: 60px;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+  }
+
+  form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    textarea{
+      border-color: transparent;
+      background-color: transparent;
+      font-size: 16px;
+      outline-color: transparent;
+      resize: none;
+      width: 100%;
+      min-height: 50px;
+    }
+
+    .form-footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+
+      & > div {
+        display: flex;
+        align-items: center;
+
+        svg{
+          height: 40px;
+          color: $color-primary;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+
+      button{
+        padding: 5px 15px;
+        justify-content: flex-end;
+        border-radius: 3px;
+        font-size: 14px;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+}

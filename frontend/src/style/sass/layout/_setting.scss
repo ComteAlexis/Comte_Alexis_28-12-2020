@@ -1,0 +1,36 @@
+.setting {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
+  &__image {
+    width: 200px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
+
+    .btn-avatar-submit {
+      display: flex;
+      @media screen and (min-width: 750px) {
+        flex-direction: column;
+      }
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+  &__form {
+    flex: 1;
+    button {
+      background-color: $color-primary;
+      padding: 5px 10px;
+      border-color: transparent;
+      border-radius: 5px;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.btn{
+    &.btn--form{
+        width: 100%;
+        padding: 13px 0;
+        border-color: transparent;
+        background-color: rgb(56, 56, 56);
+        color: white;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+}

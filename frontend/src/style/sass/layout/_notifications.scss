@@ -1,0 +1,13 @@
+.notifications{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 0 2px;
+    border-radius: 5px;
+    @media screen and (max-width: 750px){
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+}

@@ -1,0 +1,42 @@
+.comment{
+  width: 100%;
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 3px 0;
+
+  &__avatar {
+    width: 50px;
+    padding: 0 10px;
+
+    img{
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    &__title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+      margin-top: 7px;
+      display: flex;
+      flex: 1;
+      & > p {
+        flex: 1;
+      }
+
+      & > i {
+        margin-right: 30px;
+        color: #921010;
+      }
+    }
+
+    & > p {
+      font-size: 16px;
+    }
+  }
+}
